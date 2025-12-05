@@ -1,5 +1,8 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
+import NosValeurs from '../components/Valeurs';
+import Newsletter from '../components/newsletter';
+import PourquoiavantleQuoi from '../components/quoi';
 
 
 
@@ -29,10 +32,12 @@ function home() {
 
   return (
     <>
-    <div className='min-h-screen  p-1'>
-      <Header />
+    <div className='min-h-screen'>
+     
       <main>
-      Coucou   
+        <PourquoiavantleQuoi/>
+        <NosValeurs/> 
+        <Newsletter/>
     </main>
      
 

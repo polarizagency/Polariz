@@ -16,7 +16,7 @@
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/manrope/Manrope-Variable.woff2') format('woff2');
-  font-weight: 200 800; /* Manrope va souvent de ExtraLight à ExtraBold */
+  font-weight: 200 800; 
   font-display: swap;
   font-style: normal;
 }
@@ -51,6 +51,7 @@
   --color-headers-foreground: var(--color-headers-foreground);
   --color-headerss: var(--color-headerss);
   --color-noirpolariz: var(--color-noirpolariz);
+  --color-noirpolariz-foreground: var(--color-noirpolariz-foreground);
 
   --font-clash: 'ClashDisplay', sans-serif;
   --font-manrope: 'Manrope', sans-serif;
@@ -78,7 +79,7 @@
   --color-headers: #E7DED9;
   --color-headers-foreground: #e3d3cb;
   --color-noirpolariz: #403A37;
-  --color-noirpolariz: #403A37;
+  --color-noirpolariz-foreground: #2c2827;
 
 
   --color-border: #e2e8f0;

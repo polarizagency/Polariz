@@ -1,10 +1,8 @@
-import clsx from 'clsx';
-import { Link} from 'react-router-dom';
 
 
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import logo from '../img/Logo fond blanc.png';
+import Button from './outils/buttons';
 
 
 
@@ -13,7 +11,7 @@ function Headerq() {
   return (
     <nav className="w-full bg-polariz-header border-b border-gray-200 overflow-hidden relative">
    
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between py-6 px-4 md:py-3">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between pt-6 px-4 md:py-3">
         
         <h1 className="font-clash text-3xl md:text-4xl font-semibold text-noirpolariz mb-4 md:mb-0">
           POLARIZ AGENCY
@@ -38,7 +36,7 @@ function Headerq() {
       </div>
     
       
-      <div className="flex justify-center items-center p-5 mt-10 md:mt-0">
+      <div className="flex justify-center items-center mt-10 md:mt-0">
         <h1 className="font-clash text-[18vw] md:text-[22rem] font-bold text-headers opacity-40 leading-none select-none">
           POLARIZ
         </h1>
@@ -50,22 +48,60 @@ function Headerq() {
     
 function Footerq() {
   return (
-    <footer className="bg-headers text-noirpolariz">
-      footer
+    <footer className="w-full bg-polariz-header border-b border-gray-200 overflow-hidden relative">
+      <h1 className="uppercase font-manrope text-noirpolariz text-xl md:text-4xl font-semibold text-noirpolariz w-full md:w-[1050px] text-center md:text-left mx-auto md:ml-24 py-8 px-4 md:px-1" >Gummi bears shortbread lollipop lollipop cheesecake cupcake. Lemon drops wafer fruitcake jelly </h1>
+  
+      <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 pb-17 px-4">
+        
+  <div className="w-full md:w-auto">
+    <Button variant="primary" className="w-full md:w-auto">
+      NOUS CONTACTER
+    </Button>
+  </div>
+  <div className="flex flex-col md:flex-row gap-10 md:gap-24 font-manrope">
+    
+    <div className="flex flex-col gap-6">
+      <div>
+        <p className="text-noirpolariz text-xs uppercase mb-1">Email</p>
+        <a href="mailto:polarizagency@gmail.com" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">
+          polarizagency@gmail.com
+        </a>
+      </div>
+      <div>
+        <p className="text-noirpolariz text-xs uppercase mb-1">Numéro de téléphone</p>
+        <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">
+          +33 6 83 03 29 01
+        </a>
+      </div>
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">Instagram</a>
+      <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">LinkedIn</a>
+      <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">Behance</a>
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">Accueil</a>
+      <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">Projet</a>
+      <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">À Propos</a>
+      <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">Contact</a>
+    </div>
+
+  </div>
+
+</div>
+      <div className=' w-full max-w-[1200px] mx-auto  flex flex-row gap-6 text-noirpolariz hover:text-noirpolariz-foreground'>
+          <p>©2026 POLARIZ</p>
+          <p>Mentions légales</p>
+          <p>Politique de confidentialité</p>
+        </div>
     </footer>
   );
 }
 
 // Petit composant helper pour les icônes (évite de répéter le SVG)
-function SocialIcon({ path }) {
-  return (
-    <a href="#" className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 hover:bg-primary hover:text-black transition-all duration-300">
-      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-        <path d={path} />
-      </svg>
-    </a>
-  );
-}
+
 
 function Layout() {
   return (

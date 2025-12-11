@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import travailImg from '../img/travail.jpg';
 
 
 
@@ -8,9 +9,9 @@ import React, { useState } from 'react';
 function Pourquoi() {
   return (
    <section className="w-full  py-20 px-4">
-  <div className="max-w-[1200px] mx-auto flex flex-col items-start justify-start">
+  <div className="max-w-[1100px] mx-auto flex flex-col items-start justify-start">
 
-    <h2 className="font-clash text-5xl md:text-7xl font-semibold text-white uppercase leading-tight mb-16 text-left">
+    <h2 className="font-clash text-5xl md:text-7xl font-semibold text-white uppercase leading-tight mb-10 text-left">
       WHY BEFORE <br /> WHAT
     </h2> 
      
@@ -25,6 +26,18 @@ function Pourquoi() {
         </p>
 
     </div>
+
+    
+
+  </div>
+   <div className="max-w-[1100px] mx-auto flex flex-col items-end justify-end mt-20">
+    <div className='w-[600px]'>
+
+    <img src={travailImg} className='w-[100%] h-[200px] object-cover' alt="l'entreprise qui travaille" />
+    <p className="text-l font-manrope text-gray-300 justify-start text-start mt-7"> Dans un monde saturé d’images et de messages, nous croyons à la valeur du sens.</p> <p className="w-[600px] font-manrope text-gray-300 justify-start text-start text-l">Chaque mot, chaque visuel, chaque ligne de code doit servir une intention : rendre le message plus humain et plus juste. </p>
+    </div>
+
+    
 
   </div>
 </section>

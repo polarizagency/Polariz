@@ -8,10 +8,10 @@ import React, { useState } from 'react';
 function Valeurs() {
   return (
    <div>
-      <h1 className=" max-w-[1200px] font-clash text-xl md:text-7xl font-semibold text-noirpolariz w-full text-center md:text-left mx-auto py-8 px-4 md:px-1">
+      <h1 className=" max-w-[1100px] font-clash text-xl md:text-7xl font-semibold text-noirpolariz w-full text-center md:text-left mx-auto py-8 px-4 md:px-1">
         NOS VALEURS
       </h1> 
-      <div className="max-w-[1200px] mx-auto px-2">
+      <div className="max-w-[1100px] mx-auto px-2">
         <hr className=" border-noirpolariz border-t-3  py-8  px-4"/>
       </div>
     </div>
@@ -41,9 +41,7 @@ function ValeursSection() {
   return (
   
     <>
-      
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 py-8 pb-20 px-2">
-        
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 py-8 pb-20 px-2">  
         {values.map((item) => (
           <div key={item.id} className="flex flex-col pl-6 border-l-2 border-noirpolariz ">
             <span className="font-manrope text-sm text-noirpolariz mb-2">

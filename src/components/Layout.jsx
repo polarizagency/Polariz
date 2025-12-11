@@ -49,31 +49,32 @@ function Headerq() {
 function Footerq() {
   return (
     <footer className="w-full bg-polariz-header border-b border-gray-200 overflow-hidden relative">
+
       <h1 className="uppercase font-manrope text-noirpolariz text-xl md:text-4xl font-semibold text-noirpolariz w-full md:w-[1050px] text-center md:text-left mx-auto md:ml-24 py-8 px-4 md:px-1" >Gummi bears shortbread lollipop lollipop cheesecake cupcake. Lemon drops wafer fruitcake jelly </h1>
   
-      <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 pb-17 px-4">
-        
-  <div className="w-full md:w-auto">
-    <Button variant="primary" className="w-full md:w-auto">
-      NOUS CONTACTER
-    </Button>
-  </div>
-  <div className="flex flex-col md:flex-row gap-10 md:gap-24 font-manrope">
-    
-    <div className="flex flex-col gap-6">
-      <div>
-        <p className="text-noirpolariz text-xs uppercase mb-1">Email</p>
-        <a href="mailto:polarizagency@gmail.com" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">
-          polarizagency@gmail.com
-        </a>
-      </div>
-      <div>
-        <p className="text-noirpolariz text-xs uppercase mb-1">Numéro de téléphone</p>
-        <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">
-          +33 6 83 03 29 01
-        </a>
-      </div>
-    </div>
+      <div className="w-full max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 pb-17 px-4">
+  
+        <div className="w-full md:w-auto">
+          <Button variant="primary" className="w-full md:w-auto">
+            NOUS CONTACTER
+          </Button>
+        </div>
+        <div className="flex flex-col md:flex-row gap-10 md:gap-24 font-manrope">
+      
+        <div className="flex flex-col gap-6">
+          <div>
+            <p className="text-noirpolariz text-xs uppercase mb-1">Email</p>
+            <a href="mailto:polarizagency@gmail.com" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">
+              polarizagency@gmail.com
+            </a>
+          </div>
+          <div>
+            <p className="text-noirpolariz text-xs uppercase mb-1">Numéro de téléphone</p>
+            <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">
+              +33 6 83 03 29 01
+            </a>
+          </div>
+        </div>
 
     <div className="flex flex-col gap-3">
       <a href="#" className="text-noirpolariz font-medium hover:text-noirpolariz-foreground transition-colors">Instagram</a>
@@ -99,8 +100,6 @@ function Footerq() {
     </footer>
   );
 }
-
-// Petit composant helper pour les icônes (évite de répéter le SVG)
 
 
 function Layout() {

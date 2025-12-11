@@ -14,7 +14,7 @@ function Infor() {
       <p className='text-white'>Parlons de votre idée, de votre sens, de votre “pourquoi”. Ensemble, faisons en une expérience digitale qui inspire.</p>
        <Button variant="secondary">
               NOUS CONTACTER
-            </Button>
+        </Button>
     </div>
   )
 }

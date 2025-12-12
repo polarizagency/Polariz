@@ -7,7 +7,7 @@ import Button from './outils/buttons';
 
 function Headerq() {
   return (
-    <nav className="w-full bg-polariz-header  overflow-hidden relative">
+    <nav className="w-full bg-polariz-header pb-10  overflow-hidden relative">
    
       <div className="max-w-[75%] mx-auto flex flex-col md:flex-row items-center justify-between pt-6 px-4 md:py-3">
         
@@ -36,8 +36,8 @@ function Headerq() {
       </div>
     
       
-      <div className="max-w-[125%] flex justify-center items-center mt-10 md:mt-0">
-        <h1 className="font-clash text-[100%] md:text-[22rem] font-bold text-headers opacity-40 leading-none select-none">
+      <div className="max-w-[125%] flex justify-center items-center pt-10 md:mt-0">
+        <h1 className="font-clash text-[100vw] md:text-[23vw] font-bold text-headers opacity-40 leading-none select-none">
           POLARIZ
         </h1>
       </div>

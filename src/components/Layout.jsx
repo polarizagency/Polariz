@@ -18,10 +18,10 @@ function Headerq() {
         </h1>
         
         <div className='flex flex-wrap justify-center md:flex-row items-center space-x-4 md:space-x-6 font-clash text-sm md:text-base'>
-          <p className="text-noirpolariz cursor-pointer hover:opacity-70"> ACCUEIL</p>
-          <p className="text-noirpolariz cursor-pointer hover:opacity-70"> PROJET </p>
-          <p className="text-noirpolariz cursor-pointer hover:opacity-70"> À PROPOS </p>
-          <p className="text-noirpolariz cursor-pointer hover:opacity-70"> CONTACT </p>
+          <a href='/' className="text-noirpolariz cursor-pointer hover:opacity-70"> ACCUEIL</a>
+          <a className="text-noirpolariz cursor-pointer hover:opacity-70"> PROJET </a>
+          <a href='/Qui_sommes_nous' className="text-noirpolariz cursor-pointer hover:opacity-70"> À PROPOS </a>
+          <a className="text-noirpolariz cursor-pointer hover:opacity-70"> CONTACT </a>
         </div>
       </div>
       <h1 className="font-clash text-4xl md:text-6xl font-semibold text-noirpolariz w-full md:w-[550px] text-center md:text-left mx-auto md:ml-24 py-8 px-4 md:px-1">

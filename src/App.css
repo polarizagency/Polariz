@@ -52,6 +52,8 @@
   --color-headerss: var(--color-headerss);
   --color-noirpolariz: var(--color-noirpolariz);
   --color-noirpolariz-foreground: var(--color-noirpolariz-foreground);
+  --color-orangepolariz: var(--color--orangepolariz);
+  --color-orangepolariz-foreground: var(--color--orangepolariz-foreground);
 
   --font-clash: 'ClashDisplay', sans-serif;
   --font-manrope: 'Manrope', sans-serif;
@@ -80,6 +82,9 @@
   --color-headers-foreground: #e3d3cb;
   --color-noirpolariz: #403A37;
   --color-noirpolariz-foreground: #2c2827;
+
+  --color--orangepolariz: #FF7B29;
+  --color--orangepolariz-foreground: #D94F09;
 
 
   --color-border: #e2e8f0;

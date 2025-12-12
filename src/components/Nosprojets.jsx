@@ -73,14 +73,6 @@ function NosProjetsSection() {
       text: "Refonte de l'expérience utilisateur d'une application SaaS.",
       image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
-    {
-      id: "07",
-      title: "PROJET CACHÉ PAR DÉFAUT",
-      type:"Développement Web",
-      year: "2025",
-      text: "Ce projet n'apparaît que si on clique sur le bouton plus.",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
   ];
 
   const filteredProjects = values.filter(project => project.type === activeFilter);
@@ -146,6 +138,21 @@ function NosProjetsSection() {
           ))}
         </div>
 
+          <div className="flex justify-center">
+             <a a href='#'>
+            <Button variant="secondary">
+             Plus de projets
+            </Button>
+            </a>
+          </div>
+        
+
+      </div>
+    </section>
+  );
+}
+
+/*{
         {visibleCount < filteredProjects.length && (
           <div className="flex justify-center">
             <div onClick={handleShowMore} className="cursor-pointer">
@@ -155,11 +162,7 @@ function NosProjetsSection() {
             </div>
           </div>
         )}
-
-      </div>
-    </section>
-  );
-}
+        }*/
 
 function NosProjets() {
   return (

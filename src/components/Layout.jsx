@@ -16,9 +16,9 @@ function Headerq() {
         </h1>
         
         <div className='flex flex-wrap justify-center md:flex-row items-center space-x-4 md:space-x-6 font-clash text-sm md:text-base'>
-          <a href='#' className="text-noirpolariz cursor-pointer hover:opacity-70"> ACCUEIL</a>
+          <a href='/' className="text-noirpolariz cursor-pointer hover:opacity-70"> ACCUEIL</a>
           <a href='#' className="text-noirpolariz cursor-pointer hover:opacity-70"> PROJET </a>
-          <a href='#' className="text-noirpolariz cursor-pointer hover:opacity-70"> À PROPOS </a>
+          <a href='/Qui_sommes_nous' className="text-noirpolariz cursor-pointer hover:opacity-70"> À PROPOS </a>
           <a href='#' className="text-noirpolariz cursor-pointer hover:opacity-70"> CONTACT </a>
         </div>
       </div>

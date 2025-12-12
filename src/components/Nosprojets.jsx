@@ -5,21 +5,24 @@ import React, { useState } from 'react';
 
 
 
-function Valeurs() {
+function Proj() {
   return (
-   <div>
-      <h1 className=" max-w-[75%] font-clash text-xl md:text-7xl font-semibold text-noirpolariz w-full text-center md:text-left mx-auto py-8 px-4 md:px-1">
-        NOS VALEURS
-      </h1> 
-      <div className="max-w-[75%] mx-auto px-2">
-        <hr className=" border-noirpolariz border-t-3  py-8  px-4"/>
+   <div className='max-w-[75%] text-center md:text-left mx-auto py-8 px-4 md:px-1'>
+        <div className='max-w-[45%]'>
+         <h1 className=" uppercase font-clash text-xl md:text-7xl font-semibold text-noirpolariz w-full text-center md:text-left mx-auto py-8 px-4 md:px-1">
+            Nos Projets
+        </h1> 
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+    </div>
+    <div className="mx-auto px-2">
+        <hr className=" border-noirpolariz border-t-3 py-8 px-4"/>
       </div>
     </div>
   )
 }
     
 
-function ValeursSection() {
+function NosProjetsSection() {
   const values = [
     {
       id: "01",
@@ -64,15 +67,15 @@ function ValeursSection() {
 }
 
 
-function NosValeurs() {
+function NosProjets() {
   return (
     <>
     <div className='bg-headers'>
-      <Valeurs/>  
-    <ValeursSection/>
+      <Proj/>  
+    <NosProjetsSection/>
     </div>    
     </>
   )
 }
 
-export default NosValeurs;
+export default NosProjets;

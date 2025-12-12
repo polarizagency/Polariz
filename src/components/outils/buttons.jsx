@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 export function Button({ children, variant = 'primary', disabled = false }) {
-const base = 'px-4 py-2 font-medium transition-colors duration-200';
+const base = 'px-6 py-2 font-medium transition-colors duration-200';
 const variants = {
 primary: 'bg-noirpolariz text-headers hover:bg-noirpolariz-foreground',
 secondary: 'bg-white text-noirpolariz hover:bg-headers-foreground',

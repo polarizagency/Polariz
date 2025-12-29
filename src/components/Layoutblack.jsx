@@ -1,66 +1,40 @@
-import clsx from 'clsx';
 import React, { useState } from 'react';
-import NosValeurs from '../components/Valeurs';
-import Newsletter from '../components/newsletter';
-import PourquoiavantleQuoi from '../components/quoi';
-import NosProjets from '../components/Nosprojets';
-import Button from '../components/outils/buttons';
+import { Outlet } from 'react-router-dom';
+import Button from './outils/buttons';
 
 
 
-function Headerhome() {
+
+
+function Headerblack() {
   return (
-    <nav className="w-full bg-polariz-header pb-10  overflow-hidden relative">
+   <nav className="w-full bg-noirpolariz pb-5 overflow-hidden relative">
    
       <div className="max-w-[75%] mx-auto flex flex-col md:flex-row items-center justify-between pt-6 px-4 md:py-3">
         
-        <h1 className="font-clash text-3xl md:text-4xl font-semibold text-noirpolariz mb-4 md:mb-0 text-center">
+        <h1 className="font-clash text-3xl md:text-4xl font-semibold text-headers mb-4 md:mb-0 text-center">
           POLARIZ AGENCY
         </h1>
         
         <div className='flex flex-wrap justify-center md:flex-row items-center space-x-4 md:space-x-6 font-clash text-sm md:text-base'>
-          <a href='/' className="text-noirpolariz cursor-pointer hover:opacity-70"> ACCUEIL</a>
-          <a href='/Nos_projets' className="text-noirpolariz cursor-pointer hover:opacity-70"> PROJET </a>
-          <a href='/Qui_sommes_nous' className="text-noirpolariz cursor-pointer hover:opacity-70"> À PROPOS </a>
-          <a href='/Contact' className="text-noirpolariz cursor-pointer hover:opacity-70"> CONTACT </a>
+          <a href='/' className="text-headers cursor-pointer hover:opacity-70"> ACCUEIL</a>
+          <a href='/Nos_projets' className="text-headers cursor-pointer hover:opacity-70"> PROJET </a>
+          <a href='/Qui_sommes_nous' className="text-headers cursor-pointer hover:opacity-70"> À PROPOS </a>
+          <a href='/Contact' className="text-headers cursor-pointer hover:opacity-70"> CONTACT </a>
         </div>
       </div>
-      <div className="max-w-[75%] mx-auto flex flex-col items-start">
-        <h3 className="font-clash text-4xl md:text-6xl font-semibold text-noirpolariz w-full md:w-[550px] text-left py-8 px-4 md:px-1">
-          web développement & branding
-        </h3>
-      </div>
-    
-    
-      <div className="flex justify-center md:justify-end px-4 md:px-0">
-        <p className="font-manrope text-base md:text-lg text-noirpolariz text-center md:text-left w-full md:w-[550px] py-1 px-1 md:mr-24">
-            Notre approche mêle stratégie, design et contenu pour donner vie à des outils cohérents, utiles et inspirants. Nous ne créons pas seulement des sites : nous révélons des identités.    
-        </p>
-      </div>
-    
-      
-      <div className="max-w-[125%] flex justify-center items-center pt-10 md:mt-0">
-        <h1 className="font-clash text-[100vw] md:text-[23vw] font-bold text-headers opacity-40 leading-none select-none">
-          POLARIZ
-        </h1>
-      </div>
-
+  
     </nav>
   )
 }
     
-
-
-
-
-    
-function Footer() {
+function Footerblack() {
   return (
     <footer className="w-full bg-polariz-header border-b border-gray-200 overflow-hidden relative">
 
-      <div className=' flex flex-col pt-6 px-10 md:py-3'> 
+      <div className='max-w-[75%] mx-auto flex flex-col pt-6 md:py-3'> 
 
-        <h1 className=" max-w-[60%] uppercase font-manrope text-noirpolariz text-xl md:text-4xl font-semibold text-noirpolariz  text-left  py-8 " >Gummi bears shortbread lollipop lollipop cheesecake cupcake. Lemon drops wafer fruitcake jelly </h1>
+        <h1 className=" max-w-[60%] uppercase font-manrope text-noirpolariz text-xl md:text-4xl font-semibold text-noirpolariz  text-start  py-8 " >Gummi bears shortbread lollipop lollipop cheesecake cupcake. Lemon drops wafer fruitcake jelly </h1>
     
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 pb-17">
     
@@ -69,7 +43,7 @@ function Footer() {
             <Button variant="primary" className=" md:w-auto">
               NOUS CONTACTER
             </Button>
-          </a>
+          </a>  
           </div>
           <div className="flex flex-col md:flex-row gap-10 md:gap-24 font-manrope">
         
@@ -115,28 +89,21 @@ function Footer() {
 }
 
 
-
-function home() {
-  const [count, setCount] = useState(0)
-
+function Layout() {
   return (
     <>
-    <Headerhome />
-    <div className='min-h-screen'>
-     
-      <main>
-        <PourquoiavantleQuoi/>
-        <NosValeurs/>
-        <NosProjets/> 
-        <Newsletter/>
-    </main>
-     
+    <div>
+      <Headerblack />
+     <main>
+     <Outlet />
+     </main>
 
 
-    </div>   
-    <Footer/> 
+       
+      <Footerblack />
+    </div>    
     </>
   )
 }
 
-export default home;
+export default Layout;

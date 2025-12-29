@@ -3,6 +3,7 @@ import Button from './outils/buttons';
 import { motion } from 'framer-motion';
 
 
+
 const animationverslehautnosprojets = {
   hidden: { opacity: 0, y: 70 },
   visible: { 
@@ -12,20 +13,31 @@ const animationverslehautnosprojets = {
   }
 };
 
+const animationverslebasnosprojets = {
+  hidden: { opacity: 0, y: -70 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
+
 const animationversladroitenosprojets = {
-  hidden: { opacity: 0, x: -70 },
+  hidden: { opacity: 0, x: -70, y: 70 },
   visible: { 
     opacity: 1, 
     x: 0,
+    y: 0,
     transition: { duration: 0.6, ease: "easeOut" }
   }
 };
 
 const animationverslagauchenosprojets = {
-  hidden: { opacity: 0, x: 70 },
+  hidden: { opacity: 0, x: 70, y: 70 },
   visible: { 
     opacity: 1, 
     x: 0,
+    y: 0,
     transition: { duration: 0.6, ease: "easeOut" }
   }
 };
@@ -33,27 +45,34 @@ const animationverslagauchenosprojets = {
 
 function Proj() {
   return (
-    <div className='max-w-[75%] text-center md:text-left mx-auto py-8 px-4 md:px-1 text-headers'>
-      <div className='max-w-[45%]'>
-        <h1 className=" uppercase font-clash text-xl md:text-7xl font-semibold text-headers w-full text-center md:text-left mx-auto py-8 px-4 md:px-1">
+    <motion.div 
+      initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-70px" }} variants={animationverslebasnosprojets}  
+      className='w-full max-w-[90%] md:max-w-[75%] mx-auto py-8 px-4 text-headers'
+    >
+      <div className='w-full md:max-w-[45%] text-center md:text-left'>
+        <h1 className="uppercase font-clash text-4xl md:text-7xl font-semibold text-headers mb-6">
            Nos Projets
         </h1> 
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+        <p className="text-sm md:text-base leading-relaxed">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+        </p>
       </div>
-      <div className="mx-auto pt-2">
-        <hr className=" border-headers border-t-3 py-8 "/>
+      <div className="pt-8">
+        <hr className="border-headers border-t-2 md:border-t-3"/>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
 function NosProjetsSection() {
   const [activeFilter, setActiveFilter] = useState("Développement Web");
   const [visibleCount, setVisibleCount] = useState(3);
- useEffect(() => {
+  
+  useEffect(() => {
     setVisibleCount(3);
   }, [activeFilter]);
 
+  
   const values = [
     {
       id: "01",
@@ -105,10 +124,12 @@ function NosProjetsSection() {
     },
   ];
 
+
   const filteredProjects = values.filter(project => project.type === activeFilter);
   const categories = ["Développement Web", "Branding", "UX/UI"];
-  
   const displayedProjects = filteredProjects.slice(0, visibleCount);
+
+  const handleShowMore = () => setVisibleCount(filteredProjects.length);
 
   const getAnimationVariant = (index) => {
     const position = index % 3;
@@ -116,102 +137,79 @@ function NosProjetsSection() {
     if (position === 1) return animationverslehautnosprojets;   
     return animationverslagauchenosprojets;                    
   };
-    const handleShowMore = () => {
-    setVisibleCount(filteredProjects.length);
-  };
 
   return (
     <section className="pb-20 px-4 font-manrope">
-      <div className="max-w-[75%] mx-auto">
+      <div className="w-full max-w-[90%] md:max-w-[75%] mx-auto">
         
-        <div className="flex flex-wrap gap-4 mb-12">
+        <motion.div 
+          initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-70px" }} variants={animationverslehautnosprojets}  
+          className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4 mb-12"
+        >
           {categories.map((cat) => (
-            <div 
-              key={cat} 
-              onClick={() => setActiveFilter(cat)}
-              className="cursor-pointer inline-block"
-            >
-              <Button variant={activeFilter === cat ? "primary" : "secondary"}>
-                <div className="flex items-center gap-2 uppercase font-bold text-sm tracking-wide">
-                  <span className={`w-2 h-2 rounded-full ${activeFilter === cat ? "bg-noirpolariz" : "bg-orangepolariz"}`}></span>
+            <div key={cat} onClick={() => setActiveFilter(cat)} className="cursor-pointer">
+              <Button variant={activeFilter === cat ? "fourth" : "secondary"}>
+                <div className="flex items-center gap-2 uppercase font-bold text-[10px] md:text-sm tracking-wide">
+                  <span className={`w-2 h-2 rounded-full ${activeFilter === cat ? "bg-headers" : "bg-noirpolariz"}`}></span>
                   <span>{cat}</span>
                 </div>
               </Button>
             </div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 text-noirpolariz">
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 text-noirpolariz">
           {displayedProjects.map((item, index) => (
-            <motion.div key={item.id} initial="hidden"  whileInView="visible" viewport={{ once: true, margin: "-50px" }}
-              variants={getAnimationVariant(index)} className="bg-headers group cursor-pointer hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            <motion.div 
+              key={item.id} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}
+              variants={getAnimationVariant(index)} 
+              className="bg-headers group cursor-pointer hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            >
+              <div className="w-full h-48 sm:h-56 md:h-64 overflow-hidden relative">
                 <a href='/Projet_en_detail'>
-              <div className="w-full h-64 overflow-hidden relative">
-                <img 
-                  src={item.image} 
-                  alt={item.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                </a>
               </div>
-              </a>
 
-              <div className="p-8 flex flex-col flex-grow">
-                <div className="flex justify-between items-start mb-4 text-xs font-medium uppercase tracking-wider">
+              <div className="p-6 md:p-8 flex flex-col flex-grow">
+                <div className="flex justify-between items-start mb-4 text-[10px] md:text-xs font-medium uppercase tracking-wider">
                   <div className="flex flex-col gap-1">
                     <span className="font-bold">{item.type}</span>
                     {item.type !== "Branding" && <span className="opacity-50">BRANDING</span>}
                   </div>
-                  <span className="text-noirpolariz">{item.year}</span>
+                  <span>{item.year}</span>
                 </div>
 
-                <h4 className="font-clash text-2xl md:text-3xl font-semibold uppercase mb-4 leading-tight">
+                <h4 className="font-clash text-xl md:text-3xl font-semibold uppercase mb-4 leading-tight">
                   {item.title}
                 </h4>
 
-                <p className="text-sm leading-relaxed mt-auto opacity-80">
+                <p className="text-xs md:text-sm leading-relaxed mt-auto opacity-80">
                   {item.text}
                 </p>
               </div>
             </motion.div>
           ))}
-          
         </div>
 
+        {visibleCount < filteredProjects.length && (
           <div className="flex justify-center">
-             <a href='/Nos_projets'>
-            <Button variant="secondary">
-             Plus de projets
+            <Button variant="secondary" onClick={handleShowMore}>
+              Plus de projets
             </Button>
-            </a>
           </div>
-        
-
+        )}
       </div>
     </section>
   );
 }
 
-/*{
-        {visibleCount < filteredProjects.length && (
-          <div className="flex justify-center">
-            <div onClick={handleShowMore} className="cursor-pointer">
-                <Button variant="secondary">
-                  Plus de projets
-                </Button>
-            </div>
-          </div>
-        )}
-        }*/
-
 function NosProjets() {
   return (
-    <>
-    <div className='bg-orangepolariz min-h-screen w-full'>
+    <div className='bg-noirpolariz min-h-screen w-full overflow-x-hidden'>
       <Proj/>  
       <NosProjetsSection/>
     </div>    
-    </>
   )
 }
 

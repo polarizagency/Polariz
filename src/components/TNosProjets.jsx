@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Button from './outils/buttons'; 
 import { motion } from 'framer-motion';
 
-
+import riot from '../img/riot.png';
+import frise from '../img/Frise Chronologique.png';
+import heph from '../img/hepg.png';
+import CélestineIMG from '../img/portfolio celestine 1.png';
+import Logobusiness from '../img/logobusiness.png';
+import pero from '../img/pero.png';
 
 const animationverslehautnosprojets = {
   hidden: { opacity: 0, y: 70 },
@@ -54,7 +59,7 @@ function Proj() {
            Nos Projets
         </h1> 
         <p className="text-sm md:text-base leading-relaxed">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+          Chaque projet est une nouvelle occasion de repousser les limites du possible. Découvrez nos travaux les plus récents, marqués par une quête constante de sens et d'esthétique.
         </p>
       </div>
       <div className="pt-8">
@@ -76,43 +81,48 @@ function NosProjetsSection() {
   const values = [
     {
       id: "01",
-      title: "NOM DU PROJET",
+      title: "Heph Agency",
       type: "Développement Web",
       year: "2025",
       text: "Description courte du projet ou phrase d'accroche",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: heph,
+      link: "/hephagency"
     },
     {
       id: "02",
-      title: "NOM DU PROJET",
+      title: "Sweet riot",
       type: "Développement Web",
-      year: "2025",
-      text: "Description courte du projet ou phrase d'accroche",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      year: "2026",
+      text: "La rencontre explosive entre l'iconique chaussure britannique et la gourmandise de Haribo dans une expérience digitale dynamique.",
+      image: riot,
+      link: "/sweetriot"
     },
     {
       id: "03",
-      title: "NOM DU PROJET",
+      title: "Bollaert Business",
       type: "Développement Web",
-      year: "2025",
-      text: "Description courte du projet ou phrase d'accroche",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      year: "2024",
+      text: " L'enjeu était de moderniser l'image de marque du Bollaert Business Team tout en optimisant les performances techniques du site.",
+      image: Logobusiness,
+      link: "/bollaert"
     },
     {
       id: "04",
-      title: "PROJET BRANDING A",
+      title: "Portfolio de Célestine",
       type: "Branding",
-      year: "2024",
-      text: "Identité visuelle complète pour une startup innovante.",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      year: "2025",
+      text: "Identité visuelle pour un portfolio.",
+      image: CélestineIMG,
+      link: "/portfoliocelestine"
     },
     {
       id: "05",
-      title: "PROJET UX B",
-      type: "UX/UI",
+      title: "Escape Game en React",
+      type: "Développement Web",
       year: "2025",
-      text: "Refonte de l'expérience utilisateur d'une application SaaS.",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      text: "Escape game virtuel",
+      image: pero,
+      link: "/Projet_en_detail"
     },
     {
       id: "06",
@@ -120,8 +130,19 @@ function NosProjetsSection() {
       type:"Développement Web",
       year: "2025",
       text: "Refonte de l'expérience utilisateur d'une application SaaS.",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      link: "/Projet_en_detail"
     },
+    {
+      id: "07",
+      title: "Frise Chronologique",
+      type: "Développement Web",
+      year: "2026",
+      text: "Une interface interactive où le temps se parcourt comme une véritable histoire, alliant fluidité et immersion totale.",
+      image: frise,
+      link: "/frise"
+    }
+    
   ];
 
 
@@ -159,37 +180,48 @@ function NosProjetsSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 text-noirpolariz">
-          {displayedProjects.map((item, index) => (
-            <motion.div 
-              key={item.id} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}
-              variants={getAnimationVariant(index)} 
-              className="bg-headers group cursor-pointer hover:shadow-xl transition-shadow duration-300 flex flex-col"
-            >
-              <div className="w-full h-48 sm:h-56 md:h-64 overflow-hidden relative">
-                <a href='/Projet_en_detail'>
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-                </a>
-              </div>
+        {displayedProjects.map((item, index) => (
+  <motion.div 
+    key={item.id} 
+    initial="hidden" 
+    whileInView="visible" 
+    viewport={{ once: true, margin: "-50px" }}
+    variants={getAnimationVariant(index)} 
+    className="bg-headers group cursor-pointer hover:shadow-xl transition-shadow duration-300 flex flex-col"
+  >
+    {/* Lien sur l'image */}
+     <div className="w-full h-64 overflow-hidden relative bg-gray-100 flex items-center justify-center">
+              <img 
+                src={item.image} 
+                alt={item.title} 
+                className="w-[90%] h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
 
-              <div className="p-6 md:p-8 flex flex-col flex-grow">
-                <div className="flex justify-between items-start mb-4 text-[10px] md:text-xs font-medium uppercase tracking-wider">
-                  <div className="flex flex-col gap-1">
-                    <span className="font-bold">{item.type}</span>
-                    {item.type !== "Branding" && <span className="opacity-50">BRANDING</span>}
-                  </div>
-                  <span>{item.year}</span>
-                </div>
+    <div className="p-6 md:p-8 flex flex-col flex-grow">
+      <div className="flex justify-between items-start mb-4 text-[10px] md:text-xs font-medium uppercase tracking-wider">
+        <div className="flex flex-col gap-1">
+          <span className="font-bold">{item.type}</span>
+          {item.type !== "Branding" && <span className="opacity-50">BRANDING</span>}
+        </div>
+        <span>{item.year}</span>
+      </div>
 
-                <h4 className="font-clash text-xl md:text-3xl font-semibold uppercase mb-4 leading-tight">
-                  {item.title}
-                </h4>
+      {/* Lien sur le titre */}
+      <a href={item.link} className="hover:opacity-70 transition-opacity">
+        <h4 className="font-clash text-xl md:text-3xl font-semibold uppercase mb-4 leading-tight">
+          {item.title}
+        </h4>
+      </a>
 
-                <p className="text-xs md:text-sm leading-relaxed mt-auto opacity-80">
-                  {item.text}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+      <p className="text-xs md:text-sm leading-relaxed mb-6 opacity-80">
+        {item.text}
+      </p>
+
+    
+    </div>
+  </motion.div>
+))} 
         </div>
 
         {visibleCount < filteredProjects.length && (

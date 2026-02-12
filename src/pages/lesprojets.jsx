@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
-import TNosProjets from '../components/TNosprojets';
+import TNosProjets from '../components/TNosProjets';
 import Newsletter from '../components/newsletter';
 
 function lesprojets() {

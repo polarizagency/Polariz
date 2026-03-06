@@ -6,9 +6,9 @@ import Newsletter from '../components/newsletter';
 import Button from '../components/outils/buttons';
 
 import { motion } from 'framer-motion';
-import GenstravailleIMG from '../img/gens_travail.jpg'
-import HommebureauIMG from '../img/homme_bureau.jpg'
-import TestIMG from '../img/test.jpg'
+import GenstravailleIMG from '../img/la rebellion a du gout.png'
+import HommebureauIMG from '../img/BOITE DESIGN.jpg'
+import TestIMG from '../img/affiche teaser.png'
 
 const animationverslehautnewslettter = {
   hidden: { opacity: 0, y: 50 }, 

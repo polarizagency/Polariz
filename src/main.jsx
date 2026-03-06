@@ -18,6 +18,9 @@ import Heph from './pages/hephagency.jsx'
 import Portfoliocelestine from './pages/portfoliocelestine.jsx'
 import BolaertBusiness from './pages/bollaertbusiness.jsx'
 import Escape from './pages/escapegame.jsx'
+import Crochet from './pages/crochet.jsx'
+import Karting from './pages/karting.jsx'
+import BlindTest from './pages/blindtest.jsx'
 
 import './index.css'
 
@@ -41,6 +44,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           
           <Route path="/Bollaert" element={<BolaertBusiness />} />
           <Route path="/Escape1" element={<Escape />} />
+          <Route path="/crochet" element={<Crochet />} />
+          <Route path="/betkarting" element={<Karting />} />
+          <Route path="/blindtest" element={<BlindTest />} />
+          
           
         </Route>
       </Routes>

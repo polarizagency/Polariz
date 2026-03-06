@@ -8,6 +8,8 @@ import heph from '../img/hepg.png';
 import CélestineIMG from '../img/portfolio celestine 1.png';
 import Logobusiness from '../img/logobusiness.png';
 import pero from '../img/pero.png';
+import faniecrochet2 from '../img/faniecrochet2.png'
+import Betkarting from '../img/betkarting1.png'
 
 const animationverslehautnosprojets = {
   hidden: { opacity: 0, y: 70 },
@@ -122,16 +124,16 @@ function NosProjetsSection() {
       year: "2025",
       text: "Escape game virtuel",
       image: pero,
-      link: "/Projet_en_detail"
+      link: "/Escape1"
     },
     {
       id: "06",
-      title: "PROJET UXfeef B",
-      type:"Développement Web",
-      year: "2025",
-      text: "Refonte de l'expérience utilisateur d'une application SaaS.",
-      image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      link: "/Projet_en_detail"
+      title: "L'ART DU CROCHET",
+      type: "Développement Web",
+      year: "2024",
+      text: "Documentation et création de patterns d'amigurumis et accessoires faits main.",
+      image: faniecrochet2,
+      link: "/crochet"
     },
     {
       id: "07",
@@ -141,6 +143,24 @@ function NosProjetsSection() {
       text: "Une interface interactive où le temps se parcourt comme une véritable histoire, alliant fluidité et immersion totale.",
       image: frise,
       link: "/frise"
+    },
+    {
+    id: "08", 
+    title: "BETKARTING",
+    type: "Développement Web",
+    year: "2026",
+    text: "Application de simulation de paris sportifs dédiée aux courses de karting.",
+    image: Betkarting,
+    link: "/betkarting"
+  },
+    {
+      id: "09",
+      title: "Blind Test App",
+      type: "Branding",
+      year: "2026",
+      text: "Description courte du projet ou phrase d'accroche",
+      image: heph,       
+      link: "/blindtest"
     }
     
   ];
@@ -189,15 +209,15 @@ function NosProjetsSection() {
     variants={getAnimationVariant(index)} 
     className="bg-headers group cursor-pointer hover:shadow-xl transition-shadow duration-300 flex flex-col"
   >
-    {/* Lien sur l'image */}
+   <a href={item.link}>
      <div className="w-full h-64 overflow-hidden relative bg-gray-100 flex items-center justify-center">
               <img 
                 src={item.image} 
                 alt={item.title} 
                 className="w-[90%] h-full object-contain group-hover:scale-105 transition-transform duration-500"
               />
-            </div>
-
+      </div>
+</a>
     <div className="p-6 md:p-8 flex flex-col flex-grow">
       <div className="flex justify-between items-start mb-4 text-[10px] md:text-xs font-medium uppercase tracking-wider">
         <div className="flex flex-col gap-1">

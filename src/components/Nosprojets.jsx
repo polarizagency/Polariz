@@ -103,7 +103,7 @@ function NosProjetsSection() {
       year: "2025",
       text: "Escape game virtuel",
       image: pero,
-      link: "/Projet_en_detail"
+      link: "/Escape1"
     },
       {
         id: "06",

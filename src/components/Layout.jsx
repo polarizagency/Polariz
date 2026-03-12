@@ -9,7 +9,7 @@ function Headerq() {
 
   const navLinks = [
     { name: 'ACCUEIL', href: '/' },
-    { name: 'PROJET', href: '/Nos_projets' },
+    { name: 'PROJETS', href: '/Nos_projets' },
     { name: 'À PROPOS', href: '/Qui_sommes_nous' },
     { name: 'CONTACT', href: '/Contact' },
   ];
@@ -69,7 +69,7 @@ function Footerq() {
       <div className='max-w-[90%] md:max-w-[75%] mx-auto flex flex-col pt-10 px-4 md:py-3'> 
 
         <h1 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-start py-8 leading-tight"> 
-          Vous voulez vous distinguer sur le numérique ?
+          Voulez-vous vous distinguer sur le numérique ?
         </h1>
     
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 pb-16">
@@ -110,7 +110,7 @@ function Footerq() {
             <div className="flex flex-col gap-3">
               <p className="text-[10px] uppercase opacity-60 tracking-widest md:hidden">Navigation</p>
               <a href="/" className="text-noirpolariz font-medium hover:opacity-70">Accueil</a>
-              <a href="/Nos_projets" className="text-noirpolariz font-medium hover:opacity-70">Projet</a>
+              <a href="/Nos_projets" className="text-noirpolariz font-medium hover:opacity-70">Projets</a>
               <a href="/Qui_sommes_nous" className="text-noirpolariz font-medium hover:opacity-70">À Propos</a>
             </div>
           </div>

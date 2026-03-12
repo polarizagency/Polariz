@@ -21,6 +21,9 @@ import Escape from './pages/escapegame.jsx'
 import Crochet from './pages/crochet.jsx'
 import Karting from './pages/karting.jsx'
 import BlindTest from './pages/blindtest.jsx'
+import Draw from './pages/drawvision.jsx'
+import Revelacteur from './pages/revelacteur.jsx'
+import Sushi from './pages/sushi.jsx'
 
 import './index.css'
 
@@ -47,6 +50,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/crochet" element={<Crochet />} />
           <Route path="/betkarting" element={<Karting />} />
           <Route path="/blindtest" element={<BlindTest />} />
+          <Route path="/drawvision" element={<Draw />} />
+          <Route path="/revelacteur" element={<Revelacteur />} />
+          <Route path="/sushiapp" element={<Sushi />}/>
+
           
           
         </Route>

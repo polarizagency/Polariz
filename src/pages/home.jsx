@@ -12,7 +12,7 @@ function Headerhome() {
 
   const navLinks = [
     { name: 'ACCUEIL', href: '/' },
-    { name: 'PROJET', href: '/Nos_projets' },
+    { name: 'PROJETS', href: '/Nos_projets' },
     { name: 'À PROPOS', href: '/Qui_sommes_nous' },
     { name: 'CONTACT', href: '/Contact' },
   ];
@@ -90,7 +90,7 @@ function Footer() {
     <footer className="w-full bg-polariz-header border-t border-gray-200 overflow-hidden relative">
       <div className='flex flex-col pt-10 px-6 md:px-10'> 
         <h1 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-left mb-10 leading-tight"> 
-          Vous voulez vous distinguer sur le numérique ?
+          Voulez-vous vous distinguer sur le numérique ?
         </h1>
     
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 pb-16">
@@ -128,7 +128,7 @@ function Footer() {
             <div className="flex flex-col gap-3">
               <p className="text-[10px] uppercase opacity-50 tracking-widest">Navigation</p>
               <a href="/" className="text-noirpolariz font-medium hover:opacity-70 transition-opacity">Accueil</a>
-              <a href="/Nos_projets" className="text-noirpolariz font-medium hover:opacity-70 transition-opacity">Projet</a>
+              <a href="/Nos_projets" className="text-noirpolariz font-medium hover:opacity-70 transition-opacity">Projets</a>
               <a href="/Qui_sommes_nous" className="text-noirpolariz font-medium hover:opacity-70 transition-opacity">À Propos</a>
             </div>
           </div>

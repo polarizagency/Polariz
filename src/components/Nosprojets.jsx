@@ -7,6 +7,11 @@ import heph from '../img/hepg.png';
 import CélestineIMG from '../img/portfolio celestine 1.png';
 import Logobusiness from '../img/logobusiness.png';
 import pero from '../img/pero.png';
+import faniecrochet2 from '../img/faniecrochet2.png'
+import Betkarting from '../img/betkarting1.png'
+import Revelacteur from '../img/revelacteur1.png'
+import draw1 from '../img/draw-1.webp';
+import sushi1 from '../img/sushi-1.webp';
 
 const animationverslehautnosprojets = {
   hidden: { opacity: 0, y: 70 },
@@ -115,14 +120,59 @@ function NosProjetsSection() {
         link: "/Projet_en_detail"
       },
       {
-        id: "07",
-        title: "Frise Chronologique",
-        type: "Développement Web",
-        year: "2026",
-        text: "Une interface interactive où le temps se parcourt comme une véritable histoire, alliant fluidité et immersion totale.",
-        image: frise,
-        link: "/frise"
-      }
+            id: "07",
+            title: "Frise Chronologique",
+            type: "Développement Web",
+            year: "2026",
+            text: "Une interface interactive où le temps se parcourt comme une véritable histoire, alliant fluidité et immersion totale.",
+            image: frise,
+            link: "/frise"
+          },
+          {
+          id: "08", 
+          title: "BETKARTING",
+          type: "Développement Web",
+          year: "2026",
+          text: "Application de simulation de paris sportifs dédiée aux courses de karting.",
+          image: Betkarting,
+          link: "/betkarting"
+        },
+          {
+            id: "09",
+            title: "Blind Test App",
+            type: "Branding",
+            year: "2026",
+            text: "Description courte du projet ou phrase d'accroche",
+            image: heph,       
+            link: "/blindtest"
+          },
+            {
+              id: "10",
+              title: "RÉVEL'ACTEUR",
+              type: "UX/UI",
+              year: "2026",
+              text: "Conception de la maquette pour une association culturelle. Focus sur l'engagement bénévole et l'expérience utilisateur.",
+              image: Revelacteur,
+              link: "/revelacteur"
+            },
+             {
+              id: "11",
+              title: "DRAW VISION",
+              type: "UX/UI",
+              year: "2025",
+              text: "Application de réalité virtuelle permettant de projeter et d'interagir avec ses créations dans un espace immersif.",
+              image: draw1, 
+              link: "/draw-vision"
+            },
+             {
+              id: "12",
+              title: "SUSHI APP",
+              type: "UX/UI",
+              year: "2025",
+              text: "Application mobile de commande au design minimaliste optimisant le parcours d'achat utilisateur.",
+              image: sushi1,
+              link: "/sushiapp"
+            }
     ];
   
   const filteredProjects = values.filter(project => project.type === activeFilter);

@@ -134,11 +134,11 @@ function Footer() {
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row gap-4 md:gap-10 py-8 border-t border-black/5 text-[11px] text-noirpolariz opacity-60'>
+        <div className='flex flex-col md:flex-row gap-4 md:gap-10 py-8 border-t border-black/5 text-[11px] text-noirpolariz '>
           <p>©2026 POLARIZ</p>
-          <div className="flex flex-wrap gap-4">
-            <p className="cursor-pointer hover:underline">Mentions légales</p>
-            <p className="cursor-pointer hover:underline">Politique de confidentialité</p>
+          <div className='flex flex-wrap gap-4'>
+            <a href='mentions-legales' className="text-noirpolariz font-medium hover:opacity-70">Mentions légales</a>
+            <a href='politique-de-confidentialite' className="text-noirpolariz font-medium hover:opacity-70 ">Politique de confidentialité</a>
           </div>
         </div>
       </div>

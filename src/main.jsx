@@ -25,6 +25,9 @@ import Draw from './pages/drawvision.jsx'
 import Revelacteur from './pages/revelacteur.jsx'
 import Sushi from './pages/sushi.jsx'
 
+import MentionsLegales from './pages/mentions-legales.jsx'
+import Politique from './pages/politique.jsx'
+
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -53,6 +56,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/drawvision" element={<Draw />} />
           <Route path="/revelacteur" element={<Revelacteur />} />
           <Route path="/sushiapp" element={<Sushi />}/>
+
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-de-confidentialite" element={<Politique />} />
 
           
           

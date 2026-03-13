@@ -117,11 +117,11 @@ function Footerq() {
         </div>
 
         {/* Mentions et Copyright */}
-        <div className='flex flex-col md:flex-row gap-4 md:gap-10 py-8 border-t border-black/5 text-[11px] text-noirpolariz opacity-70'>
+        <div className='flex flex-col md:flex-row gap-4 md:gap-10 py-8 border-t border-black/5 text-[11px] text-noirpolariz '>
           <p>©2026 POLARIZ</p>
           <div className='flex flex-wrap gap-4'>
-            <p className="hover:underline cursor-pointer">Mentions légales</p>
-            <p className="hover:underline cursor-pointer">Politique de confidentialité</p>
+            <a href='mentions-legales' className="text-noirpolariz font-medium hover:opacity-70">Mentions légales</a>
+            <a href='politique-de-confidentialite' className="text-noirpolariz font-medium hover:opacity-70 ">Politique de confidentialité</a>
           </div>
         </div>
       </div>

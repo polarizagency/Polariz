@@ -87,7 +87,7 @@ function Headerhome() {
 
 function Footer() {
   return (
-    <footer className="w-full bg-polariz-header border-t border-gray-200 overflow-hidden relative">
+    <footer className="w-full bg-polariz-header overflow-hidden relative">
       <div className='flex flex-col pt-10 px-6 md:px-10'> 
         <h1 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-left mb-10 leading-tight"> 
           Voulez-vous vous distinguer sur le numérique ?

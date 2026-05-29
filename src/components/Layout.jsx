@@ -65,7 +65,7 @@ function Headerq() {
 
 function Footerq() {
   return (
-    <footer className="w-full bg-polariz-header border-t border-gray-200 overflow-hidden relative">
+    <footer className="w-full bg-polariz-header overflow-hidden relative">
       <div className='max-w-[90%] md:max-w-[75%] mx-auto flex flex-col pt-10 px-4 md:py-3'> 
 
         <h1 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-start py-8 leading-tight"> 

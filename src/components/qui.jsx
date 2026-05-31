@@ -78,7 +78,7 @@ function Qui() {
                       Le numérique n'a de valeur que s'il a du sens.
                     </h3>
                     <p className='text-lg md:text-xl leading-relaxed text-noirpolariz font-manrope mt-6 opacity-80'>
-                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                    Polariz, c’est l’idée que le numérique doit éclairer, pas éblouir. Nous aidons les entreprises à se recentrer sur leur raison d’être pour créer des expériences digitales sincères, utiles et émotionnellement fortes.
                     </p>
                 </div>
 

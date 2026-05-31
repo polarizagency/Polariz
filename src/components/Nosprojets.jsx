@@ -47,7 +47,7 @@ function Proj() {
         <h1 className="uppercase font-clash text-4xl md:text-7xl font-semibold text-headers py-8">
            Nos Projets
         </h1> 
-        <p className="text-sm md:text-base">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+        <p className="text-sm md:text-base">Chaque projet est une nouvelle occasion de repousser les limites du possible. Découvrez nos travaux les plus récents, marqués par une quête constante de sens et d'esthétique. </p>
       </div>
       <div className="pt-2">
         <hr className="border-headers border-t-2 md:border-t-3 pb-8"/>

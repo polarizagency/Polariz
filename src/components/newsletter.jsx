@@ -15,9 +15,9 @@ const animationverslehautnewslettter = {
 function Infor() {
   return (
    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={animationverslehautnewslettter} className="flex flex-col items-center justify-center text-center  gap-6 max-w-[80%] mx-auto px-4 pt-20 pb-20">
-      <h1 className=" font-clash text-xl md:text-3xl font-semibold text-white w-full text-center  mx-auto  px-4 md:px-1">
+      <h2 className=" font-clash text-xl md:text-3xl font-semibold text-white w-full text-center  mx-auto  px-4 md:px-1">
         ENVIE DE LANCER VOTRE PROJET ?
-      </h1> 
+      </h2> 
       <p className='text-white'>Parlons de votre idée, de votre sens, de votre “pourquoi”. Ensemble, faisons en une expérience digitale qui inspire.</p>
       <a href="/Contact" >
        <Button variant="secondary">

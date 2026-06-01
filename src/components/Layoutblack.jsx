@@ -18,9 +18,9 @@ function Headerblack() {
     <nav className="w-full bg-noirpolariz pb-5 overflow-hidden relative">
       {/* Barre de navigation */}
       <div className="max-w-[90%] md:max-w-[75%] mx-auto flex items-center justify-between pt-6 px-4 md:py-3 relative z-50">
-        <h1 className="font-clash text-2xl md:text-4xl font-semibold text-headers">
+        <h2 className="font-clash text-2xl md:text-4xl font-semibold text-headers">
           POLARIZ AGENCY
-        </h1>
+        </h2>
         
         {/* Menu Desktop */}
         <div className='hidden md:flex items-center space-x-6 font-clash text-base'>
@@ -67,9 +67,9 @@ function Footerblack() {
     <footer className="w-full bg-polariz-header overflow-hidden relative">
       <div className='max-w-[90%] md:max-w-[75%] mx-auto flex flex-col pt-10 px-4'> 
 
-        <h1 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-start py-8 leading-tight"> 
+        <h3 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-start py-8 leading-tight"> 
           Voulez-vous vous distinguer sur le numérique ?
-        </h1>
+        </h3>
     
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 pb-16">
           <div className="w-full md:w-auto">

@@ -15,12 +15,12 @@ const animationverslehautqui = {
 function Question({ onAfficherFormulaire }) {
     return (
         <section className="w-[90%] md:w-[75%] mx-auto py-12 md:py-20 flex flex-col ">
-            <motion.h2 
+            <motion.h1 
                 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-70px" }} variants={animationverslehautqui} 
                 className="w-full md:max-w-[65%] font-clash text-4xl md:text-8xl text-headers leading-tight text-center md:text-left"
             >
                Une question ou envie de lancer votre projet ?
-            </motion.h2>
+            </motion.h1>
 
             <motion.div 
                 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-70px" }} variants={animationverslehautqui} 

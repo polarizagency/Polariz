@@ -35,7 +35,7 @@ function Qui() {
         <section className="max-w-[90%] md:max-w-[75%] mx-auto py-12 md:py-20 flex flex-col overflow-hidden">
 
             {/* Titre principal */}
-            <motion.h2 
+            <motion.h1
               initial="hidden" 
               whileInView="visible" 
               viewport={{ once: true, margin: "-50px" }} 
@@ -43,7 +43,7 @@ function Qui() {
               className="font-clash text-5xl md:text-8xl font-semibold text-noirpolariz uppercase leading-tight mb-10"
             >
                 QUI SOMMES NOUS ?
-            </motion.h2>
+            </motion.h1>
 
             {/* Première partie : Image à gauche, texte à droite */}
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={animationverslehautqui}>

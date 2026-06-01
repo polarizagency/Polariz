@@ -21,9 +21,9 @@ function Headerhome() {
     <nav className="w-full bg-polariz-header pb-10 overflow-hidden relative">
       {/* Barre de navigation principale */}
       <div className="max-w-[90%] md:max-w-[75%] mx-auto flex items-center justify-between pt-6 px-4 md:py-3 relative z-50">
-        <h1 className="font-clash text-2xl md:text-4xl font-semibold text-noirpolariz">
+        <h2 className="font-clash text-2xl md:text-4xl font-semibold text-noirpolariz">
           POLARIZ AGENCY
-        </h1>
+        </h2>
         
         {/* Menu Desktop - Visible uniquement sur md et + */}
         <div className='hidden md:flex items-center space-x-8 font-clash text-base'>
@@ -64,9 +64,9 @@ function Headerhome() {
 
       {/* Hero Section */}
       <div className="max-w-[90%] md:max-w-[75%] mx-auto flex flex-col items-start relative z-10">
-        <h3 className="font-clash text-4xl md:text-6xl font-semibold text-noirpolariz w-full md:w-[550px] text-left py-8 md:px-1">
+        <h1 className="font-clash text-4xl md:text-6xl font-semibold text-noirpolariz w-full md:w-[550px] text-left py-8 md:px-1">
           web développement & branding
-        </h3>
+        </h1>
       </div>
     
       <div className="flex justify-center md:justify-end px-6 md:px-0 relative z-10">
@@ -89,9 +89,9 @@ function Footer() {
   return (
     <footer className="w-full bg-polariz-header overflow-hidden relative">
       <div className='flex flex-col pt-10 px-6 md:px-10'> 
-        <h1 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-left mb-10 leading-tight"> 
+        <h3 className="w-full md:max-w-[60%] uppercase font-manrope text-xl md:text-4xl font-semibold text-noirpolariz text-left mb-10 leading-tight"> 
           Voulez-vous vous distinguer sur le numérique ?
-        </h1>
+        </h3>
     
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 pb-16">
           <div className="w-full md:w-auto">
